@@ -15,7 +15,7 @@ header {
     border-bottom: 4px solid #B84827;
 }
 
-#course-title {
+header span#course-title {
     display: block;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
@@ -31,6 +31,11 @@ nav {
     background-color: #3A3B3A;
     display: flex;
     justify-content: space-around;
+}
+
+nav a:link,
+nav a:visited {
+    color: #C7C5B7;
 }
 
 nav a {
@@ -251,7 +256,7 @@ footer p {
 }
 
 #lastModified {
-    color: #B84827;
+    color: #E8956F;
     font-family: 'Kanit', sans-serif;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -284,7 +289,7 @@ footer p {
         letter-spacing: 1px;
     }
 
-    #course-title {
+    header span#course-title {
         font-size: 1.3rem;
         letter-spacing: 1px;
     }
