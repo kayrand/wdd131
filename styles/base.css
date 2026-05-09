@@ -76,7 +76,6 @@ main {
     padding: 0 20px;
 }
 
-/* Big bold name with accent block */
 h1 {
     font-family: 'Kanit', sans-serif;
     font-weight: 800;
@@ -91,9 +90,9 @@ h1 {
 .tagline {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.1rem;
-    color: #B84827;
+    color: #8B3520;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 40px;
