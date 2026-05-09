@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #181715;
+    background-color: #C7C5B7;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #181715;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #B84827;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #C7C5B7;
+    padding: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+    background-color: #3A3B3A;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #C7C5B7;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 18px 20px;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #B84827;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #B84827;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Big bold name with accent block */
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.tagline {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #B84827;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.tagline::before,
+.tagline::after {
+    content: '—';
+    margin: 0 12px;
+    color: #3A3B3A;
+}
+
+/* Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 2px solid #181715;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0 #B84827;
+}
+
+.card h2 {
+    background-color: #181715;
+    color: #C7C5B7;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 25px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    border-bottom: 3px solid #B84827;
+}
+
+.card h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 25px 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: #181715;
+    border-left: 5px solid #B84827;
+    margin: 20px 25px 10px;
+}
+
+/* About Me Section */
+.about-content {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+}
+
+.about-content p {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.about-content img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border: 3px solid #181715;
+    box-shadow: 6px 6px 0 #B84827;
+}
+
+/* Country Section */
+.country-content {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+}
+
+.country-content img {
+    width: 160px;
+    height: auto;
+    border: 2px solid #181715;
+}
+
+.country-content figcaption {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #3A3B3A;
+}
+
+.country-content p {
+    flex: 1;
+}
+
+/* Resources List */
+.card ul {
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+}
+
+.card ul li {
+    margin-bottom: 14px;
+    padding-left: 25px;
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+}
+
+.card ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #B84827;
+    font-weight: 700;
+}
+
+.card ul li a {
+    color: #181715;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: #B84827;
+}
+
+/* Footer */
+footer {
+    background-color: #181715;
+    color: #C7C5B7;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-top: 4px solid #B84827;
+}
+
+footer p {
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+#lastModified {
+    color: #B84827;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content,
+    .country-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        align-self: center;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 12px 8px;
+        letter-spacing: 1px;
+    }
+
+    #course-title {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+}
