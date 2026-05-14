@@ -1,0 +1,40 @@
+@media (min-width: 700px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 10px 25px;
+    }
+
+    #course-title {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
