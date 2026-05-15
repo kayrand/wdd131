@@ -1,10 +1,23 @@
-<!DOCTYPE html>
+Let me go through this rubric line by line and make sure you're locked in for full points. I'll check each item and flag anything that needs fixing.
+✅ Items you're already good on:
+
+#3 Color Contrast — The Stone & Sky palette I gave you passes WCAG AA
+#4 Hamburger Menu — Working with toggle and X symbol
+#5 Responsive Images — Using object-fit: cover for uniform sizing
+#6 JavaScript — Year and last modified are dynamic
+#7 Design Principles — Alignment, proximity, repetition all in place
+
+⚠️ Items to double-check for full points:
+#1 Page Audit (no errors) & #2 Lighthouse (95+ on Accessibility, Best Practices, SEO)
+There are a few small improvements I'd add to bulletproof these scores. Here's the updated HTML:
+Updated temples.html (with Lighthouse improvements)
+html<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Temple Album – Kaylee Godfrey</title>
-    <meta name="description" content="A picture album of temples from around the world, created by Kaylee Godfrey for WDD 131.">
+    <meta name="description" content="A picture album featuring nine temples from around the world, created by Kaylee Godfrey for WDD 131 Dynamic Web Fundamentals.">
     <meta name="author" content="Kaylee Godfrey">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +29,8 @@
 <body>
     <header>
         <span id="course-title">Temple Album</span>
-        <button id="menu-toggle">&#9776;</button>
-        <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <nav id="main-nav" aria-label="Main navigation">
             <a href="#">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
@@ -31,54 +44,54 @@
 
         <div class="gallery">
             <figure>
-                <img src="images/boise.jpeg" alt="Boise Idaho Temple">
+                <img src="images/boise.jpeg" alt="Boise Idaho Temple on a sunny day" loading="lazy" width="400" height="300">
                 <figcaption>Boise Idaho Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/boston.jpeg" alt="Boston Massachusetts Temple">
+                <img src="images/boston.jpeg" alt="Boston Massachusetts Temple in winter" loading="lazy" width="400" height="300">
                 <figcaption>Boston Massachusetts Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/calgary.jpeg" alt="Calgary Alberta Temple">
+                <img src="images/calgary.jpeg" alt="Calgary Alberta Temple exterior" loading="lazy" width="400" height="300">
                 <figcaption>Calgary Alberta Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/birmingham.jpeg" alt="Birmingham Alabama Temple">
+                <img src="images/birmingham.jpeg" alt="Birmingham Alabama Temple with grounds sign" loading="lazy" width="400" height="300">
                 <figcaption>Birmingham Alabama Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/barranquilla.jpeg" alt="Barranquilla Colombia Temple">
+                <img src="images/barranquilla.jpeg" alt="Barranquilla Colombia Temple at sunset" loading="lazy" width="400" height="300">
                 <figcaption>Barranquilla Colombia Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/adelaide.jpeg" alt="Adelaide Australia Temple">
+                <img src="images/adelaide.jpeg" alt="Adelaide Australia Temple exterior" loading="lazy" width="400" height="300">
                 <figcaption>Adelaide Australia Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/albuquerque.jpeg" alt="Albuquerque New Mexico Temple">
+                <img src="images/albuquerque.jpeg" alt="Albuquerque New Mexico Temple with fountain" loading="lazy" width="400" height="300">
                 <figcaption>Albuquerque New Mexico Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/accra.jpeg" alt="Accra Ghana Temple">
+                <img src="images/accra.jpeg" alt="Accra Ghana Temple at twilight" loading="lazy" width="400" height="300">
                 <figcaption>Accra Ghana Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/abidjan.jpeg" alt="Abidjan Ivory Coast Temple">
+                <img src="images/abidjan.jpeg" alt="Abidjan Ivory Coast Temple rendering" loading="lazy" width="400" height="300">
                 <figcaption>Abidjan Ivory Coast Temple</figcaption>
             </figure>
         </div>
     </main>
 
     <footer>
-        <p>©<span id="currentyear"></span> Kaylee Godfrey 🌸 Alabama, USA</p>
+        <p>&copy;<span id="currentyear"></span> Kaylee Godfrey 🌸 Alabama, USA</p>
         <p id="lastModified"></p>
     </footer>
 </body>

@@ -9,7 +9,10 @@ const mainNav = document.getElementById("main-nav");
 menuToggle.addEventListener("click", () => {
     mainNav.classList.toggle("open");
 
-    if (mainNav.classList.contains("open")) {
+    const isOpen = mainNav.classList.contains("open");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    if (isOpen) {
         menuToggle.innerHTML = "&times;";
     } else {
         menuToggle.innerHTML = "&#9776;";
