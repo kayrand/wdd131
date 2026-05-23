@@ -1,0 +1,148 @@
+:root {
+    --deep-blue: #1B3A57;
+    --mountain-green: #4A6741;
+    --stone: #D6CFC2;
+    --cream: #F4F1EB;
+    --charcoal: #2A2A2A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--deep-blue);
+    text-align: center;
+    padding: 25px 20px;
+    border-bottom: 4px solid var(--mountain-green);
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    color: var(--cream);
+    margin: 0;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid var(--deep-blue);
+}
+
+section {
+    background-color: #FFFFFF;
+    border: 2px solid var(--deep-blue);
+    margin-top: 25px;
+}
+
+section h2 {
+    background-color: var(--deep-blue);
+    color: var(--cream);
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 3px solid var(--mountain-green);
+}
+
+section ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+section ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--stone);
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+section ul li strong {
+    font-family: 'Kanit', sans-serif;
+    color: var(--deep-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+
+.weather-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto 0;
+}
+
+footer {
+    background-color: var(--deep-blue);
+    color: var(--cream);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--mountain-green);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: var(--stone);
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 110px;
+        left: 30px;
+        width: 260px;
+        background-color: rgba(255, 255, 255, 0.92);
+    }
+
+    .weather {
+        position: absolute;
+        top: 110px;
+        right: 30px;
+        width: 260px;
+        background-color: rgba(255, 255, 255, 0.92);
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
