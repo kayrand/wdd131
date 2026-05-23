@@ -4,6 +4,8 @@
     --stone: #D6CFC2;
     --cream: #F4F1EB;
     --charcoal: #2A2A2A;
+    --white: #FFFFFF;
+    --card-overlay: rgba(255, 255, 255, 0.92);
 }
 
 body {
@@ -44,7 +46,7 @@ main {
 }
 
 section {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border: 2px solid var(--deep-blue);
     margin-top: 25px;
 }
@@ -127,7 +129,7 @@ footer p {
         top: 110px;
         left: 30px;
         width: 260px;
-        background-color: rgba(255, 255, 255, 0.92);
+        background-color: var(--card-overlay);
     }
 
     .weather {
@@ -135,7 +137,7 @@ footer p {
         top: 110px;
         right: 30px;
         width: 260px;
-        background-color: rgba(255, 255, 255, 0.92);
+        background-color: var(--card-overlay);
     }
 
     .weather-icon {
