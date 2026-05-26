@@ -79,11 +79,14 @@ const mainNav = document.getElementById("main-nav");
 function displayTemples(templeList) {
     galleryContainer.innerHTML = "";
 
-    templeList.forEach(temple => {
+    templeList.forEach((temple, index) => {
         const card = document.createElement("figure");
 
+        const loadingType = index === 0 ? "eager" : "lazy";
+        const fetchPriority = index === 0 ? 'fetchpriority="high"' : '';
+
         card.innerHTML = `
-            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
+            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="${loadingType}" ${fetchPriority}>
             <figcaption>
                 <h2>${temple.templeName}</h2>
                 <p><strong>Location:</strong> ${temple.location}</p>
