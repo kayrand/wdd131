@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan – Hello Date Night – Kaylee Godfrey</title>
+    <meta name="description" content="Website planning document for Hello Date Night, a date night planner website by Kaylee Godfrey for WDD 131.">
+    <meta name="author" content="Kaylee Godfrey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Hello Date Night</h1>
+        <p class="tagline">Website Planning Document</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Hello Date Night</strong></p>
+            <p>
+                I picked "Hello Date Night" because it feels warm, friendly, and inviting, kind of like 
+                getting a fun text from your best friend with the perfect date idea. The name brings that 
+                little spark of excitement you get when you're planning something fun with someone you 
+                love, but it still feels casual and easy. I wanted it to be the kind of name that works 
+                for anyone, whether you're in a new relationship, married for years, or just looking for 
+                something different to do this weekend.
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                Hello Date Night is a date night planning website that helps couples come up with fun, 
+                creative ideas based on what they're in the mood for. It's basically a one stop spot 
+                for date inspiration, personalized suggestions, and a place to save your favorite ideas 
+                for later.
+            </p>
+            <p>The site will have three main pages:</p>
+            <ul>
+                <li>
+                    <strong>Home Page</strong>: A welcoming landing page that introduces visitors to 
+                    the site and shows off a few featured date ideas to get them excited.
+                </li>
+                <li>
+                    <strong>Date Ideas Page</strong>: A full collection of date ideas pulled from a 
+                    JavaScript array. Users can filter by category (indoor, outdoor, budget, food, 
+                    and more) and save their favorites using localStorage so they can come back to 
+                    them later.
+                </li>
+                <li>
+                    <strong>Plan a Date Page</strong>: An interactive form where users share what 
+                    they're looking for (budget, vibe, time, location) and get back a personalized 
+                    date idea created with JavaScript.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <p>Here are some questions a typical visitor might ask:</p>
+            <ul>
+                <li>
+                    "What can my husband and I do for a budget friendly date night this weekend 
+                    that doesn't involve another dinner and a movie?"
+                </li>
+                <li>
+                    "It's pouring rain outside, what are some cozy and creative date ideas we 
+                    can do at home tonight?"
+                </li>
+                <li>
+                    "Can I save my favorite date ideas to a list so I can plan ahead for special 
+                    occasions throughout the year?"
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <p>The Hello Date Night color palette is modern, romantic, and feminine, with a Pinterest-inspired feel.</p>
+
+            <div class="color-card">
+                <div class="color-swatch off-white"></div>
+                <p><strong>Off-White, #F7F2EC</strong></p>
+                <p>Used for the page background, creates a soft, clean canvas.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch coral"></div>
+                <p><strong>Soft Coral, #E89B8F</strong></p>
+                <p>Used for accent details, dividers, and decorative elements.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch deep-rose"></div>
+                <p><strong>Deep Rose, #9C4B5C</strong></p>
+                <p>Used for headings, buttons, footer, and important text.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch navy-plum"></div>
+                <p><strong>Navy Plum, #2E1F32</strong></p>
+                <p>Used for body text and dark accents.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>Hello Date Night uses two carefully selected Google Fonts.</p>
+
+            <div class="font-example">
+                <h3 class="font-display-sample">Playfair Display</h3>
+                <p>Used for all <strong>headings</strong> (h1, h2, h3) throughout the site. This serif font adds an elegant, romantic feel.</p>
+            </div>
+
+            <div class="font-example">
+                <p class="font-body-sample">Lato</p>
+                <p>Used for all <strong>body text</strong>, paragraphs, navigation, and form elements. This clean, modern sans-serif font ensures excellent readability.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>Below are the wireframes for the home page in both mobile and desktop views.</p>
+
+            <h3>Mobile View</h3>
+            <div class="wireframe-mobile">
+                <div class="wf-box wf-dark">Logo / Hello Date Night</div>
+                <div class="wf-box wf-coral">☰ Menu</div>
+                <div class="wf-box wf-rose">Hero Image + Tagline</div>
+                <div class="wf-box wf-dark">Plan a Date Button</div>
+                <div class="wf-box wf-light">Featured Date Ideas</div>
+                <div class="wf-box wf-light">Date Card 1</div>
+                <div class="wf-box wf-light">Date Card 2</div>
+                <div class="wf-box wf-light">Date Card 3</div>
+                <div class="wf-box wf-dark">Footer + References Link</div>
+            </div>
+
+            <h3>Desktop View</h3>
+            <div class="wireframe-desktop">
+                <div class="wf-box wf-dark">Logo &nbsp;&nbsp;|&nbsp;&nbsp; Home &nbsp;&nbsp; Date Ideas &nbsp;&nbsp; Plan a Date</div>
+                <div class="wf-box wf-rose">Hero Image + Tagline + Call-to-Action Button</div>
+                <div class="wf-box wf-light">Featured Date Ideas</div>
+                <div class="wf-row">
+                    <div class="wf-box wf-light">Date Card 1</div>
+                    <div class="wf-box wf-light">Date Card 2</div>
+                    <div class="wf-box wf-light">Date Card 3</div>
+                </div>
+                <div class="wf-box wf-dark">Footer + References Link</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Kaylee Godfrey 💕 WDD 131 Site Plan</p>
+    </footer>
+</body>
+</html>
