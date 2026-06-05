@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Product Review – Kaylee Godfrey</title>
+    <meta name="description" content="Product review form created by Kaylee Godfrey for WDD 131.">
+    <meta name="author" content="Kaylee Godfrey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <p class="tagline">Share Your Experience</p>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <h2>Tell Us About Your Product</h2>
+
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option disabled selected value="">Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <input type="radio" id="rating-1" name="rating" value="1" required>
+                    <label for="rating-1">1 ☆</label>
+
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-2">2 ☆</label>
+
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-3">3 ☆</label>
+
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-4">4 ☆</label>
+
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label for="rating-5">5 ☆</label>
+                </div>
+            </fieldset>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <div class="features">
+                    <input type="checkbox" id="feature-1" name="features" value="Easy to Install">
+                    <label for="feature-1">Easy to Install</label>
+
+                    <input type="checkbox" id="feature-2" name="features" value="Durable">
+                    <label for="feature-2">Durable</label>
+
+                    <input type="checkbox" id="feature-3" name="features" value="Good Value">
+                    <label for="feature-3">Good Value</label>
+
+                    <input type="checkbox" id="feature-4" name="features" value="Reliable">
+                    <label for="feature-4">Reliable</label>
+
+                    <input type="checkbox" id="feature-5" name="features" value="High Quality">
+                    <label for="feature-5">High Quality</label>
+                </div>
+            </fieldset>
+
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5"></textarea>
+
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Kaylee Godfrey 🌸 Alabama, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
