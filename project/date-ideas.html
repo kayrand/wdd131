@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Ideas – Hello Date Night</title>
+    <meta name="description" content="Browse a curated collection of date ideas at Hello Date Night. Filter by category, save your favorites, and plan your next great night together.">
+    <meta name="author" content="Kaylee Godfrey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/date-ideas.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Hello Date Night logo" class="logo">
+            </a>
+            <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="date-ideas.html" class="active">Date Ideas</a>
+                <a href="plan-a-date.html">Plan a Date</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Browse Date Ideas</h1>
+            <p>Find the perfect date idea for any vibe, budget, or time of year. Click the heart to save your favorites for later!</p>
+        </section>
+
+        <section class="filters">
+            <h2>Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="indoor">Indoor</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                <button class="filter-btn" data-filter="budget">Budget</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="cozy">Cozy</button>
+                <button class="filter-btn" data-filter="favorites">Favorites ♥</button>
+            </div>
+        </section>
+
+        <section class="date-ideas">
+            <p id="results-message"></p>
+            <div class="card-grid" id="date-grid">
+                <!-- Cards will be added by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Hello Date Night by Kaylee Godfrey</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

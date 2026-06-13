@@ -1,0 +1,17 @@
+const menuToggle = document.getElementById("menu-toggle");
+const mainNav = document.getElementById("main-nav");
+
+menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+
+    if (mainNav.classList.contains("open")) {
+        menuToggle.innerHTML = "&times;";
+    } else {
+        menuToggle.innerHTML = "&#9776;";
+    }
+});
+
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").innerHTML = currentYear;
+
+document.getElementById("lastModified").innerHTML = "Last Modified: " + document.lastModified;
